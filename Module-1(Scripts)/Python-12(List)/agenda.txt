@@ -1,0 +1,13 @@
+Agenda
+--------
+1) List  packing  and  unpacking
+
+2) Functions
+
+3) Methods
+
+4) Programs
+
+5) Nested  List
+
+6) List  comprehension
