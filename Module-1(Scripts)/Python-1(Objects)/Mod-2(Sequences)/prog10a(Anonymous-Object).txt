@@ -1,0 +1,14 @@
+Anonymous  object  
+----------------------
+1) What  is   _   called ?   --->  Anonymous  object  (or) Nameless  object
+
+2) How  many  nameless  objects  can  be  a  program ?  --->  Just  one  (or)  zero
+
+3) What  happens  when  another  nameless  object  is  created ?  ---> Existing  nameless  object  gets  deleted
+
+4) Can  there  be  multiple  nameless  objects  in  a  program ?  ---> No
+
+5) _ = 10
+    _ = 20
+   What  happens  when  _ = 20  is  executed ?  --->  A  new  nameless  object  is  created  with  value  20  and
+										  old  nameless  object  with  10  is  lost

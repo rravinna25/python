@@ -1,0 +1,40 @@
+int  object
+------------
+1) What  can  an  int  object  hold ?  ---> An  integer  number  such  as  25
+
+2) What  is  an  integer ?  --->  A  number  without  decimal  point
+
+3) What  is  9247  called ? ---> Positive  integer
+    What  is  -682  called ?  --->  Negative  integer
+
+4) What  is  the  maximum  value  of  integer ?  ---> Infinity
+    What  is  the  minimum  value  of  integer ?  ---> -Infinity
+
+5) Why  python  does  not  support  long  integer ?  --->  
+						Since  max  value  of  integer  is  infinity  and  hence  there  is  no  need  of  long  integer
+
+6) What  does  a = 25  do ? ---> Assigns  reference  'a'  to  int  object  25
+
+7) a = 25
+    What  is  difference  between  25  and  'a' ?  --->  25  is  an  object  (i.e.  int  class  object)  
+												and 
+										    'a'  is  reference  to  the  object
+    
+8) a = 25
+    What  does  object   'a'  contain ?  ---> Integer  number  25
+    What  does  reference  'a'  contain ?  ---> Address  (or)  id  of  the  object
+
+9) a = 25
+    What  is  the  name  of  object ?  --->  Reference  name  is  nothing  but  object  name
+    If  reference  name  is  'a' , what  is  the  object  name  ?  ---> 'a'  itself
+
+10) What  is  the  difference  between  25  in  other  languages  and  25  in  python ?  --->  
+											25  is  value  in  other  languages  and   25  is  object  in  pyhton
+    
+11) Is  $75  valid ?  --->  No  due  to  special  character  $
+
+12) Is  int  a  user  defined  class  (or)  pre-defined ?  --->  A  pre-defined  class
+
+13) Where  is  int  class  defined ?  --->  In  builtins  module
+
+14) What  is  a  module ?  --->  File

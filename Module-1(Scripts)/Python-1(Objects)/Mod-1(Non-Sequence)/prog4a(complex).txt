@@ -1,0 +1,22 @@
+complex   object
+-------------------
+1) What  can  a  complex  object  hold  ?  ---> A  complex  number  such  as  3 + 4j
+
+2) What  are  the  two  fields  of  complex  object ?  --->  real  and  imag
+
+3) What  are  3  and  4  in  3 + 4j ?  ---> 3  is  real  and  4  is  imag
+
+4) a = 3 + 4j
+    How  to  obtain  3  and  4  from  object  'a' ?  --->  a . real  and  a . imag
+
+5) Is  7 + j8  valid ?  --->  No  becoz  imag  should  be  before  'j'  but  not  after  'j'
+
+6) Is  5 + 6i  valid ?  --->  No  due  to  'i'
+
+7) Is  9 + j  valid ?  --->  No  becoz  imag  is  missing
+
+8) What  does  a = 3 + 4j  do ?  --->  Assigns  reference  'a'  to  complex  object  3+4j
+
+9) What  is  the  value  of  'j' ?  --->  sqrt(-1)
+
+10) Where  is  complex  class  defined ?  --->  In  builtins  module

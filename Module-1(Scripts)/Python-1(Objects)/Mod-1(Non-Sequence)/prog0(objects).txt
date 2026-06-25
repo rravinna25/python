@@ -1,0 +1,26 @@
+Python  classes
+-----------------
+1) What  are  the  four  different  types  of  objects  in  python ?  --->  
+						Non-sequnece , sequence , iterator  and  user-defined  object
+
+2) What  are  the  five  different  non-sequences  ?  --->  int , float , complex , bool  and  NoneType
+
+3) What  is  a  non-sequence ?  --->  An  object  which  can  hold  single  element
+
+4) Does  python  support  char,  long  and  double  classes  ?  --->  No
+
+5) What  are  the  six  different  sequences  ?  --->  str ,  range , list , tuple , set  and  dict
+
+6) What  is  a  sequence ?  --->  An  object  which  can  hold  multiple  elements
+
+7) What  is  another  name  for  sequence ?  --->  Iterable  (or) collection
+
+
+Note:
+1) What  does  'c'  language  support  (Total : 5) ?  --->  Variable , pointer , array ,  structure  and  union
+
+2) What  does  java  support  (Total : 2) ?  --->  Variable  and  object
+
+3) What  does  python  support (Total : 1) ?  --->  Only  object
+
+4) In  other  words,  python  does  not  support  variable , pointer , array , structure  and  union

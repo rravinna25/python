@@ -1,0 +1,84 @@
+set  object
+-------------
+1) What  is  a  set ?  --->  A  group  of  elements  in  { }
+
+2) Is  {10 , 20 , 15}  a  set ?  --->  Yes  due  to  { }
+
+3) What  is  set  operator ?  --->  { }
+
+4) Can  set  hold  different  types  of  elements ?   ---> Yes  becoz  set  is  heterogeneous  object (like  list  and  tuple)
+
+5) Can  set  hold  duplicate  elements ?  ---> No  becoz  set  can  hold  only  unique  elements  (like  range  object)
+    Is  {25 , 25 , 25}  valid ?  --->  Yes  and  it  is  a  set  of  single  element  i.e.  {25}
+
+6) a = {25 , 10.8 , 'Hyd' , True , 3+4j , None , 'Hyd' , 25}
+    How  many  elements  are  in  set  'a' ?  --->  6  elements  but  not  8
+
+7) Is  set  ordered  (or)  unordered  ?  ---> Unordered
+
+8) What  is  an  unordered  object ?  ---> Insertion  order  is  not  maintained
+
+9) How  is  {10 , 20 , 15 , 5}  represented  internally ?  --->  Any  order such  as   {5 , 20 , 15 , 10}
+
+10) What  are  first  and  last  elements  in  {10 , 20 , 15 , 18} ?  --->  No  idea  becoz  it  is  unordered
+
+11) Is  set  indexed ?  ---> No  becoz  it  is  unordered
+
+12) What  does  set[2]  do ?  ---> Throws  error  becoz  set  is  not  indexed
+
+13) How  to  obtain  10th  element  of  set ?  --->
+                                                                 Not  possible  becoz  random  access  is  not  possible  as  there  are  no  indexes
+
+14) Can  set  be  sliced ?   ---> No  becoz  there  are  no  indexes
+
+15) How  to  access  (or)  iterate  set  elements ?  --->   With  for  loop (sequential  access)
+											i.e.  for  x  in  set:
+								   					print(x)
+
+16) How  to  insert  an  element  into  the  set ?  --->  With  add()  method  of  set  class
+
+17) set = {10 , 20 , 15}
+      What  does  set . add(18)  do ?  ---> Inserts  18  any  where  in  the  set
+      What  does  set . add(20)  do ?  ---> Ignores  20  becoz  set  already  contains  20
+
+18) How  to  remove  a  set  element ?  --->  With  remove()  method  of  set  class
+
+19) set = {10 , 15 , 20 , 15 , 18}
+      What  does  set . remove(15)  do ?  ---> Removes  15  from  the  set
+      What  does  set . remove(25)  do ?  --->  Raises  error  becoz  there  is  no  25  in  the  set
+
+20) In   other  words,  set  is  growable  and  shrinkable
+
+21) set = {10 , 20 , 15}
+      Is  set[1] = 18  valid ?  ---> No  becoz  set  is  not  indexed
+
+22) In  other  words,  set  can  not  be  modified  becoz  there  are  no  indexes
+
+23) Is  set  a  mutable  object  (or)  immutable ?  --->  Mutable  object  but  not  100%  becoz  modification  is  not  permitted
+
+24) Can  set  hold  mutable  elements ?  --->  No 
+      Can  list  (or)  hold  mutable  elements ?  --->  Yes
+
+25) In  other  words,  set  can  hold  only  immutable  elements
+
+26) Is  {{10 , 20 , 15 , 18}}  valid ?  --->  No  becoz  set  can  not  contain  set  as  set  is  mutable 
+      Is  {(10 , 20,  15 , 18)}  valid ?  --->  Yes  becoz  set  can  contain  tuple  is  as  tuple  is  immutable 
+      Is  {[10 , 20 , 15 , 18]}  valid ?  --->  No  becoz  set  can  not  contain  list  as  list  is  mutable       
+      Is  [[10 , 20 , 15 , 18]]  valid ?  ---> Yes  becoz  list  can  hold  both  mutable  and  immutable  elements
+      Is  ([10 , 20 , 15 , 18])  valid ?  --->  Yes  becoz  tuple  can  hold  both  mutable  and  immutable  elements
+
+27) In  other  words,  nested  list  and  nest  tuple  are  valid  but  not  nested  set
+
+28) Can  set  be  repeated  ?  ---> No  becoz  duplicates  are  obtained  when  set  is  repeated  which  is  not  permitted
+
+29) What  does  len(set)  do ?  --->  Returns  number  of  elements  in  the  set
+
+
+
+Note:
+How  is  set  different  from  remaining  sequences  (total :  5) ?  ---> 1) set  is  unordered												
+						    2) set  is  not  indexed												
+						   3) Set  can  not  hold  duplicate  elements												
+						   4) Set  can  not  hold  mutable  elements
+						   5) set  is  mutable  but  not  100%
+													

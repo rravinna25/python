@@ -1,0 +1,32 @@
+Comments
+------------
+1) How  to  write  a  single  line  comment  ?  --->  With  #  operator
+
+2) How  to  write  a  multi-line  comment ?  --->  '''
+										     Line  1
+										     Line  2
+										     Line 3
+									  '''
+
+3) Are  comments  executed ?  ---> No  and  they  are  ignored
+
+4) What  is  the  advantage  of  comments ?  --->  More  clarity  and  better  readability
+
+5) Are  nested  comments  valid ?  --->  No  i.e.  There  can  not  be  a  comment  in  a  comment
+
+6) '''  --->  Comment  open
+         Line1
+         Line2
+         Line3
+	 '''  ---> Comment   close
+	 	Line4  --->  Error
+	 	Line5  --->  Error
+	 	Line6  --->  Error
+	'''  --->  Comment  open
+	Line7
+	Line8
+	Line9
+   '''  --->  Comment  close
+
+7) What  about  nested  single  line  comment ?  --->  Permitted
+                                                                                    Eg:  #  Nested  single  #  line  comment

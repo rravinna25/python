@@ -1,0 +1,18 @@
+Hexa  Decimal  integer
+--------------------------
+1) What  is  the  prefix  of  hexa-decimal  number ? --->  0X  (or)  0x
+
+2) What  are  the  valid  characters  in  hexa-decimal  number ? ---> 0  to  9 , A  to  F  and  a  to  f
+
+3) What  are  the  values  of  A  to  F ?  ---> 10  to  15
+     
+4) What  is  the  base  of  hexa-decimal  number ?  --->  6 + 10 = 16  due  to  10  digits  and  6  alphabets
+
+5) a = 0XA7B9
+    What  does  object  'a'  contain (Hexa-decimal  number  (or)  decimal  equivalent) ?  ---> The  decimal  equivalent
+
+6) In  other  words,  hexa  decimal  number  is  automatically  converted  to  decimal  number  which  is  stored  in  the  object
+
+7) Finally  object  will  never  contain  hexa-decimal  number
+
+8) What  does  print(hexa-decimal-number)  do ? --->  Prints  decimal  equivalent  of  the  number
