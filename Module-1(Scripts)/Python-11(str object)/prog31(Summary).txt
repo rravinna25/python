@@ -1,0 +1,17 @@
+Summary  of  str  methods
+-------------------------------
+1) What  are  the  four  search  methods ?  --->  find() , rfind() , index()  and  rindex()
+
+2) What  are  the  five  case-conversion  methods ?  --->  lower(), upper(), title(), capitalize(), swapcase()
+
+3) What  are  the  six  testing  methods ?  --->  isalpha() , isdigit() , isupper() ,  islower() , isalnum() , isspace()
+
+4) What  are  the  three  stripping  methods ?  --->  lstrip() , rstrip()  and  strip()
+
+5) What  are  the  three  important  methods ?  --->  split() , join()  and  count()
+
+6) What  is  the  concatenation  method ?  --->  format()
+
+7) What  is  the  method  to  replace  a   string  with  a  different  string ?  ---> replace()
+
+8) What  are  the  remaining  three  methods ?  --->  startswith() , endswith()  and  center()
