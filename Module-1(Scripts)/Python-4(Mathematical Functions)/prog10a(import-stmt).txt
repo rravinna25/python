@@ -1,0 +1,50 @@
+import  statement
+---------------------
+1) What  is  the  syntax  of  import  statement ?  --->  import  modulename
+
+2) What  does  a  module  contain (Total : 4) ?  --->  Statements , objects(i.e. variables) , functions  and  classes
+
+3) import  module
+    What  does  the  statement  do ?  --->  Imports  not  only  module  but  also  statements  of  the  module
+
+4) What  about  members  of  the  module ?  ---> They  are  not  imported
+
+5) What  are  the  members  of  module  (Total : 3) ?  --->  Objects(i.e. variables) , functions  and  classes
+
+6) What  about  statements  of  the  module  ?  --->  They  are  not  members  of  the  module
+
+7) import  module
+    Can  members  of  the  module  be  used ?  --->  Yes  even  though  they  are  not  imported
+
+8) How  to  use  members  of  the  module ?  --->  module . member
+
+9) Can  member  be  used  directly  without  module  name  prefix ?  --->  No  becoz  members  are  not  imported
+
+10) import  math
+      Is  pow(x , y)  valid ?  --->  No  becoz  function  pow()  is  not  imported  from  math  module
+      Is  pi  valid ?  --->  No  becoz  object  pi  is  not  imported  from  math  module
+      Is  math . sqrt(x)  valid ?  ---> Yes
+      Is  math . pi  valid ?  --->  Yes
+
+Note:
+Let  module  abc.py  contain:
+x = 25
+stmt-1
+def  f1():
+	stmt-2
+class   c1:
+	def   m1(self):
+		stmt-3
+----------------------------
+import  abc
+What  are  imported  ?  --->  Module   abc  and  the  two  statements
+					      (i.e. x = 25  and  stmt1)
+What  are  not  imported ?   --->  object  'x' ,  function  f1   and  class  c1
+How  to  use  object  'x'  ?   ---> abc . x
+How  to  use  function  f1  ?   ---> abc . f1()
+How  to  use  class  c1  ?   ---> abc . c1()
+What  is  the  difference   between  stmt-1 , stmt-2  and  stmt-3 ?  ---> 
+													stmt-1  is  statement  of  the  module,
+													stmt-2  is  statement  of  the  function,
+													stmt-3  is  statement  of  the  method  m1  of  class  c1
+													
