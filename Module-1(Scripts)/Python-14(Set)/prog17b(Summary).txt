@@ -1,0 +1,9 @@
+Summary
+-----------
+1) What  are  the  two  insertion  methods ?  --->   add()  and  update()
+
+2) What  are  the  four  deletion  methods ?  ---> remove() , pop() , discard()  and  clear()
+
+3) What  are  the  four  set  theory  methods  (Total : 4) ?  ---> union() , intersection() ,  difference()  and   symmetric_difference()
+
+4) What  is  the  clone  method ?  --->  copy()

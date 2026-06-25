@@ -1,0 +1,13 @@
+Summary
+-----------
+1) What  is  the  only  insertion  method  in  dcitionary (Total : 1) ?  --->  update()
+
+2) What  are  deletion  methods  in  dcitionary (Total : 3) ?  --->  pop() , popitem() , clear()
+
+3) What  is  the  only  modification  method  in  dcitionary  (Total : 1) ?  --->  setdefault()
+
+4) What  are  the  four  retriveal  methods  in  dcitionary ?  --->  get() , keys() , values , items()
+
+5) What  is  the  typecasting  method  in  dictionary ?  --->  fromkeys()
+
+6) What  is  the  clone  method ?  --->  copy()
