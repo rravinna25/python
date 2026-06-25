@@ -1,0 +1,13 @@
+timeit()   function
+---------------------
+1) What  does  timeit('statement')  do ?  ---> Returns  approximate  execution  time  of  the  statement
+
+2) timeit('statement')
+    Is  the  statement  executed ?  ---> No
+
+3) Is  timeit(statement)  valid ?  ---> No  becoz  timeit()  function  expects  string  statement  but  statement  is  passed
+
+4) Where  is  timeit()  function  defined ?  ---> In  timeit  module
+
+5) timeit('stmt1; stmt2; stmt3')
+    What  does  the  statement  do  ?  ---> Returns   approximate  execution  time  of  the  3  statements

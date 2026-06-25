@@ -1,0 +1,37 @@
+Generator
+------------
+1) What  is  a  generator ? --->  Yields  elements  one  at  a  time  on  demand  but  not  in  advance
+
+2) When  is  generator  recommended  ?  --->  When  too  many  elements  are  to  be  processed
+    When  are  sequences  recommended ?  --->  When  few  elements  are  to  be  processed
+
+3) When  are  elements  of  sequence  processed ?  --->  After  all  of  them  represented  in  the  sequence
+    When  are  elements  of  generator  processed ?  --->  As  and  when  they  are  yielded  on  fly
+
+4) In  other  words,  elements  of  generator  need  not  to  be  stored  in  generator  in  advance
+
+5) Is  len(generator)  valid ?  --->  No  becoz  len()  function  expects  sequence  but  generator  is  passed
+
+6) Is  generator[3]  valid ?  --->  No  becoz  generator  is  not  indexed  as  it  is  an  empty  object
+
+7) Is  generator[3 : 7]  valid ?  --->  No  becoz  generator  can  not  be  sliced  as  it  is  not  indexed
+
+8) Is  generator * 3  valid ?  ---> No  becoz  generator  can  not  be  repeated  as  it  is  an  empty  object
+
+9) Is  generator[3] = 25  valid ?  --->  No  becoz  generator  can  not  be  modified  as  it  is  not  indexed
+
+10) In  other  words,  generator  is  immutable  object
+
+11) Which  operations  can  not  be  made  on  generator ?  --->  Index , slice , repetition , modification  and  len()
+
+12) Why  are  the  above  operations  not  permitted  on  generator  ?  --->  Since  it  is  an  empty  object
+
+13) What  are  the  two  ways  to  implement  a  generator ?  --->  Generator  function  and  generator  expression
+
+
+Note:
+1) How  many  elements  can  a  non-sequence hold ?  ---> Single
+
+2) How  many  elements  can  a  sequence  hold ?  --->  0 , 1  (or)  morethan  one
+
+3) How  many  elements  can  a  generator  hold ?  --->  Zero

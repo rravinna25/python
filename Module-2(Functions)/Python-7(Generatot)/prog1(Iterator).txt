@@ -1,0 +1,9 @@
+Iterator
+-----------
+1) What  is  an   iterator ?  --->  Yields  elements  one  at  a  time  on  demand
+
+2) What  are  the  different  iterators ?   ---> 			
+							Generator , enumerate , zip , reversed , list_reverseiterator , filter , map  and  so  on
+
+3) What  are  the  four  different  types  of  objects  in  python ?  --->  
+										Non-sequence , sequence , iterator  and  user-defined  object

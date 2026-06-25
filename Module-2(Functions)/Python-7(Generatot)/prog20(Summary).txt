@@ -1,0 +1,11 @@
+Summary
+-----------
+1) What  is  the  first  choice  to  iterate  thru  generator ?  --->
+								for  loop  becoz  StopIteration  error  is  automatically  handled   by  for  loop
+
+2) What  is  the  2nd  choice  to  iterate  thru  generator ?  --->
+									next(generator)  becoz  StopIteration  needs  to  be  handled  explicitly
+
+3) Is  *generator  recommended ?  --->  No  when  there  are  too  many  elements  and  yes  when  there  are  few  elements
+
+4) Is  list(generator)  recommended ?  --->  No  when  there  are  too  many  elements  and  yes  when  there  are  few  elements
