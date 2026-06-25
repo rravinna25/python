@@ -1,0 +1,14 @@
+# reverse()  method  demo  program (Home  work)
+a = [10 , 20 , 15 , 18]
+print(a) # [10 , 20 , 15 , 18]
+a . reverse()  #   Reverses  all  the  elements  of  the  list
+print(a) # [18 , 15 , 20 , 10]
+
+
+'''
+reverse()  method
+---------------------
+1) What  does  reverse()  method  do ?  --->  Reverses  all  the  elements  of  list
+
+2) Where  are  the  results  stored ?  --->  In  the  same  list  replacing  existing  elements (List  is  mutable)
+'''

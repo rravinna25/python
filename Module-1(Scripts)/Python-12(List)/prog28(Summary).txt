@@ -1,0 +1,18 @@
+Summary of  list  methods
+------------------------------
+1) What  are  the  three  insertion  methods  ? --->  insert() , append() , extend()
+
+2) What  are  the  three  deletion  methods ? --->  remove() , pop() , clear()
+
+3) What  are  the  two  modification  methods ? --->  sort() ,  reverse()
+
+4) What  are  the  two  common  methods  between  str , list  and  tuple ? --->  index() , count()
+
+5) What  is  the  clone  method ?  --->  copy()
+
+
+Summary  of  functions
+---------------------------
+1) What  are  the  six  important  functions ?  --->  sorted() , max() , min() ,  len() ,  sum() ,  list()
+
+2) What  are  the  two  remaining  functions ?  ---> all() , any()

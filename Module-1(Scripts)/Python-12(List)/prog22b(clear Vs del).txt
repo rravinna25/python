@@ -1,0 +1,14 @@
+clear()  method  Vs   del  operator
+----------------------------------------
+1) What  does  del  list  do ?  --->  Deletes  list  itself
+    What  does  list . clear()  do ?  --->  Removes  all  the  elements  of  the  list  but  list  remains  with  zero  elements
+
+2) a = [10 , 20 , 30]
+    del   a
+    print(a)
+    What  is  printed ?  --->  Raises  error  becoz  list  'a'  does  not  exist
+
+3) a = [10 , 20 , 30]
+    a . clear()
+    print(a)
+    What  is  printed ?  --->  Empty  list  i.e. []
