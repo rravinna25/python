@@ -1,0 +1,106 @@
+Immutable  Object  Vs  Mutable  object
+----------------------------------------------
+1) What  is  reusability
+
+2) Which  objects  are  reusable
+
+3) a = 25
+    b = 25  --->  Does  'b'  point  to  a  new  object   (or)  same  object
+    a   is   b   --->  True 
+    a == b   --->  True
+
+4) x = [10 , 20 , 15 , 18]
+    y = [10 , 20 , 15 , 18]  --->  Does  'y'  point  to  a  new  object   (or)  same  object
+    x  is   y   --->  False
+    x  ==   y   --->  True
+
+5) p = (25 , 10.8 , 'Hyd' , True)
+    q = (25 , 10.8 , 'Hyd' , True)  --->  Does  'q'  point  to  a  new  object   (or)  same  object
+    p  is  q
+    p == q
+
+6) m = range(10)
+    n = range(10)  --->  Does  'n'  point  to  a  new  object   (or)  same  object
+    m  is  n
+    m == n
+
+7) a = [10 , 20 , 30]
+    
+    a +=  [40 , 50 , 60]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Immutable  Object  Vs  Mutable  object
+----------------------------------------------
+1) What  is  an  immutable  object ?  ---> An  object  which  can  not  be  modified
+    What  is  a  mutable  object ?  --->  An  object  which  can  be  modified
+
+2) What  are  5 + 3 = 8  immutable  objects ?  ---> int , float , complex , bool , NoneType
+                                                                                                   and
+									        str , tuple , range
+     What  are  the  three  mutable  objects ?  --->  List , set  and  dict
+
+3) Is  it  possible  to  add / remove elements  to / from  immutable  object ?  ---> 
+												No  becoz  they  are  neither  growable  nor  shrinkable
+    What  about  mutable  object ?  ---> Elements  can  be  appended  and  removed  from  mutable  object
+
+4) Which  objects  are  immutable  ?  --->  All  immutable  objects  except  range object
+    Which  objects  are  not  reusable ?  --->  All  mutable  objects  and  range  object
+
+5) What  is  reusability ?  --->  If  same  object  already  exists  in  memory,
+                                                 it  will  be  reused  and  new  object  is  not  created
+
+6) What  happens  when  an  object  does  not  exist ?   ---> A  new  object  will  be  created
+
+7) a = 25
+    b = 25
+    Where  does  ref  'b'  point  to ?  --->  Same  object  25  becoz  25  is  immutable  and  reusable
+    What  is  the  result  of  a  is  b ?  ---> True  becoz  references  'a'   and  'b'  point  to  same  object  25
+    What  is  the  result  of  a  ==  b ?  --->  True  becoz  objects  'a'  and  'b'  have  same  value  25
+
+8) a = [10 , 20 , 30]
+    b = [10 , 20 , 30]
+    Where  does  ref  'b'  point  to ?  --->  A  new  list  even  though  [10 , 20 , 30]  already  exists  in  memory
+						                  becoz  list  is  mutable  and  not  reusable
+    What  is  the  result  of  a  is  b ?  --->  False  becoz  references  'a'  and  'b'  point  to  different  lists
+    What  is  the  result  of  a  ==  b ?  --->  True  becoz  lists  'a'  and  'b'  have  same  elements
+
+9) a = range(5)
+    b = range(5)
+    Where  does  ref  'b'  point  to ?  --->  A  new  range  object  even  though  range  object  already
+							         exists  in  memory  becoz  range  is  immutable  but  not  reusable
+     What  is  the  result  of  a  is  b ?  --->  False  becoz  references  'a'  and  'b'  point  to  different  range  obechst
+     What  is  the  result  of  a  ==  b ?  --->  True  becoz  range  objects  'a'  and  'b'  have  same  elements
+
+10) a = 25
+      a = 35
+      What  is  modified  when  a = 35  is  executed ?  ---> Reference   but  not  object
+
+11) In  other  words,  reference  'a'  is  modified  to  another  object  35
+
+12) Why  is   object  not  modified  when  a = 35  is  executed ?  ---> Since  int  object  is  immutable
+												            and  hence  it  can  not  be  modified
+
+13) a = [10 , 20 , 30]
+      b = [40 , 50 , 60]
+      What  is  the  difference  between  a +=  b  and  a = b ?  ---> 
+										    a +=  b  appends  elements  of  list  'b'  to  list  'a'  (List  is  modified)  but
+										      a = b  modifies  ref  'a'  to  list  'b'

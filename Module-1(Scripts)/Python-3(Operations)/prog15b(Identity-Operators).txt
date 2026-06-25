@@ -1,0 +1,6 @@
+# Identity operators demo program
+a = 25 #  Assigns  reference  'a'  to  object  25
+b = 25 #  Assigns  ref  'b'  to  same  object  25  as  int  is  immutable  and  reusable
+print(a  is  b) # True  :  References  'a'  and  'b'  point  to  same  object  25
+print(a  is  not  b) # False
+print(a == b) # True  :  Objects  'a'  and  'b'  have  same  value   25

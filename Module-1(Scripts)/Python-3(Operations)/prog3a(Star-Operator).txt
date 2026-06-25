@@ -1,0 +1,16 @@
+*  operator
+--------------
+1) What  is  the  result  of  25 * 4 ?  ---> 100
+    What  is  the  result  of  '25' * 4 ?  ---> '25252525'
+
+2) What  does  non-seqeunce  *  non-sequence  do  ?  ---> Multiplication
+     What  does  sequence *  integer   do  ? ---> Repeats  elements  of  sequence  for  'n'  times
+     What  does  *sequence  do  ? ---> Unpacks  sequence  to  elements
+
+3) Is  *  operator  overloaded ? --->  Yes  becoz   *  operator  does  multiplication ,  repetition  and  unpacks  object
+
+4) Is  sequence *  float  valid ?  --->  No  becoz  operand2  should  be  an  integer  when  operand1  is  a  sequence
+
+5) Is  sequence * sequence  valid  ?  --->  No  becoz  operand2  should  be  an  integer  when  operand1  is  a  sequence
+
+6) Which  sequences  can  not  be  repeated (Total  :  3) ?  --->  set , dictionary , range
