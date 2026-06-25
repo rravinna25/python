@@ -1,0 +1,43 @@
+global  keyword
+------------------
+1) def  f1():
+	  x = 10
+    What  does  x = 10  do  ?  ---> Creates  a  local  variable  with  value  10
+
+2) How  to  prevent  a  local  variable  in  the  function ?  --->  Use  global  keyword
+
+3) def  f1():
+          global  x
+	  x = 10
+    What  does  x = 10  do  ?  --->  Creates  a  global   variable  with  value  10
+
+4) What  does  global  x  do ?  --->  Informs  function  to  treat  variable  'x'  as  global
+
+5) In  other  words,  global  keyword  prevents  a   local  variable  in  the  function
+
+6) Can  global  keyword  be  used  without  a  global  variable  in  the  program  ?  ---> Yes
+
+7) x = 10
+    def  f1():
+          global  x
+	  x = 20
+    What  does  x = 20  do  ?  --->  Modifies  value  of  global   variable  to  20
+
+8) x = 10
+    def  f1():  
+	  x = 20
+    What  does  x = 20  do  ?  --->  Creates  a  new  local  variable  with  value  20
+
+9) def  f1():
+          x = 10
+          global  x
+    Is  global  x  valid ?  --->  No  becoz  there  is  already  a  local  variable  'x'  in  the  function  and  
+					    hence  'x'  can  not  be  treated  as  Gv
+
+10) In  other  words,  funtion  can  not  have  local  variable  to  use   global  keyword 
+
+11) def  f1():
+             pass
+      global   x
+      Can  global  keyword  be  used  outside  the  function ?  --->  												
+						Yes  but  it  is  of  no  use  becoz  local  variables  do  not  exist  outside  the  function

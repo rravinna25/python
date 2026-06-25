@@ -1,0 +1,26 @@
+globals()  function
+---------------------
+1) What  does  globals()  function  do ?  --->  Returns  a  dictionary  with  all  the  global   variable's  and  their  values  
+								      i.e. {'var1' : value , 'var2' : value , ....}
+
+2) What  are  the  keys  of  dictionary ?  --->  All  the  global  variable  names
+    What  are  the  values  of  dictionary ?  ---> Values  of  global  variables
+
+3) What  does  globals()  function  do  when  there  are  no  global   variable's ?  --->  Returns  an  empty  dictionary  i.e. { }
+
+4) x = 10    ---> GV
+    def  f1():
+          x  = 20   --->  LV
+    How  to  use  LV  'x'  in  f1()  function ?  --->  'x'  itself
+    How  to  use  global   variable  'x'  in  f1()  function ?  --->  globals()['x']
+
+5) What  is  the  advantage  of  globals()  function ?  --->  
+							It  is  used  to  distinguish  local  and  global  variables  when  they  have  got  same  name  
+
+6) What  does  globals()['x'] = 25  do ?  --->   Modifies  value  of  global   variable  'x'  to  25
+    What  happens  when  global   variable  'x'  does  not  exist  ?  --->  Creates  a  new  global  variable  'x'  with  value  25
+
+7) What  does  globals()[valid-variable-name] = value  do ?  --->  Modifies  value  of  global   variable
+    What  does  globals()[new-variable-name] = value  do ?  ---> Creates  a  new  global   variable
+
+8) In  other  words,  globals()  function  can  modify  global  variable  and  create  a  new  global  variable

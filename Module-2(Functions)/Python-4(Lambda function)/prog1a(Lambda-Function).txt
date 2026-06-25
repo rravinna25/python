@@ -1,0 +1,82 @@
+Anonymous  Function  (or)  Lambda  function
+---------------------------------------------------
+1) What  is  a  lambda  function  ?  --->  A  function  without  name 
+
+2) In  other  words,  it  is  a  nameless  function  (or)  anonymous  function
+
+3) def  f1():
+         pass
+    Is  the  above  function  a  lambda  function ?  --->  No  becoz  it  has  name  f1	 
+
+4) What  is  the  keyword  to  define  a  lambda  function ?  --->  lambda  
+    What  is  the  keyword  to  define  a  regular  function ?  --->  def
+
+5) What  is  the  syntax  to  define  a  lambda  function ?  --->  lambda  arguments:  single  statement  (or)  single  expression
+
+6) square = lambda  x : x  * x
+    What  is  square ?  --->  It  is  a  reference  to  lambda  function  but  not  lambda  function  name
+
+7) Is  lambda  function  an  object ?  --->  Yes  and  infact  everything  in  python  is  an  object
+
+8) How  many  arguments  can  a  lambda  function  have ? --->  0 , 1  (or)  more  than  one  
+
+9) lambda (x , y) :  x + y
+    Is  the  lambda  function  valid ?  --->  No  becoz  lambda  function  arguments  can  not  be  in  ()  
+
+10) How  to  call  lambda  function  ?   --->  Thru  reference  
+								    i.e.  reference(args)
+
+11) How  many  statements  can  be  in  a  lambda  function  ?  --->  Single  statement  (or)  expression
+
+12) lambda  args :  stmt1 ; stmt2; stmt3;
+      Is  the  lambda  function  valid ?  --->  Yes  but  only  stmt1  is  in  lambda  function  and
+                                                                  statements  2  and  3  are  treated  outside  the  function
+
+13) lambda   x , y :  return  x + y
+      Is  the  lambda  function  valid ?  --->  No  becoz  lambda  function  can  not  have  return  statement
+
+14) However  the  result  of  expression  in  lambda  function  is  automatically  returned  to  function  call
+
+15) x = lambda  :  (exp1 , exp2 , exp3)
+     What  does  lambda  function  return  ?  --->  Tuple  of  3  elements
+     
+16) x = lambda  :  exp1 , exp2 , exp3
+     Is  it  a  lambda  function ?  --->  No  and  it  is  a  tuple  of  3  elements
+     What  are  the  elements  of  tuple ?  --->  lambda  function , exp2 , exp3
+     
+
+17) When  is  lambda  function  recommended ?  ---> When  there  is  a  single  statement  (or)  expression
+
+18) In  other  words,  lambda  function  is  used  as  an  alternative  to  regular  function  when  there  is  a  single  statement
+
+19) Can  lambda  function  arguments  have  default  values  ?  --->  Yes
+													  Eg:  lambda   x = 5 :  x * x
+
+20) Can  lambda  function  be  defined  and  called  in  the  same  line ?  ---> Yes  but  not  recommended
+
+21) How  to  define  and  call  lambda  function  in  the  same  line ? --->  
+										(lambda  arguments :  statement  (or)  expression)(arguments)
+      
+22) What  is  the  rule  to  define  and  call  lambda  function  in  the  same  line ?  --->  Definition  should  be  in  brackets
+
+23) What  is  the  dis-advantage  of  defining  and  calling  lambda  function  in  the  same  line ?  --->  
+											No  reusability  becoz  it  does  not  have  reference
+								
+24) In  other  words,  lambda  function  needs  to  be  defined  every  time  it  is  to  be  called
+       Eg:  (lambda   x : x * x)(5)
+              (lambda   x : x * x)(2.5)
+              (lambda   x : x * x)(True)
+              (lambda   x : x * x)(3+4j)
+
+25) What  is  the  advantage  of  defining  lambda  function  separately ?  --->  It  has  reusability  due  to  reference
+
+26) In  other  words,  define  the  function  just  once  but  not  every  time  function  is  called
+
+27) ref = lambda  x :  x = 20  
+      Is  the  statement  valid ?  --->  No  becoz  lambda  function  can  not  modify  value  of  argument
+
+28) def  f1(x):
+             x = 20
+      Can  regular  function  modify  the  argument ?  --->  Yes	     
+
+29) In  other  words,   lambda  function  argument  is  treated  as  read-only  argument  
