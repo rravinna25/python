@@ -1,0 +1,38 @@
+pass  statement
+------------------
+1) What  does  pass  statement  do ? ---> Nothing
+
+2) In  other  words,  pass  is  an  empty  statement
+
+3) def  f1():
+	   pass
+    What  is  f1()  function  called ?  --->  An  empty  function  becoz  function  does  not  have  statements 
+
+4) What  is  the  issue  without  pass  in  f1()  function ?  --->
+								Error  becoz  every  function  should  have  at  least  one  statement
+								and  write  at  least  pass  if  there  are  no  statements  in  the  function
+
+5) class   c1:
+           pass
+    What  is  class  c1  called ?  --->  Empty  class  becoz  class  does  not  have  methods  
+
+6) What  is  the  issue  without  pass  in  class  c1  ?  --->  Error  becoz  every  class  should  have  at  least  one  method
+										           and  write  at  least  pass  if  there  are  no  methods  in  the  class
+
+7) if  cond:
+	   pass
+    else:
+	  print('Sec')
+    What  is  the  issue  without  pass  between  if  and  else ?  --->
+								Error  becoz  at  least  one  statement  is  needed  between  if  and  else
+								and  write  at  least  pass  if  there  are  no  statements  between  if  and  else
+
+8) while  7 > 5:
+             pass
+    What  is  the  issue  with  the  above  loop ?  ---> Infinite  loop
+
+9) Is  Pass  valid ?  ---> No  becoz  pass  is  a   keyword  which  should  be  in  lowercase
+
+
+Note:
+pass   is  same  as  ;  in  other  languages  and  ;  is  called  null  statement  in  other  languages

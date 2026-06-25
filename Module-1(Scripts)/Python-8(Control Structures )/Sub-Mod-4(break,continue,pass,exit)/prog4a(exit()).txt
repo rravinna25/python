@@ -1,0 +1,16 @@
+exit()  function
+------------------
+1) What  does  exit()  function  do ? --->  Stops  program  execution
+
+2) In  other  words,  control  moves  out  of  program  and  rest  of  the  program  is  skipped
+
+3) Where  is  exit()  function  defined  ?  --->  In  builtins  module  and  also  in  sys  module
+
+4) What  are  the  three  ways  to  call  exit()  function ?  --->  builtins . exit() , sys . exit()  and  exit()
+
+5) Can  exit()  function  be  used  without  import ?  --->
+							Yes  becoz  it  is  member  of  builtins  module  which  is  automatically  imported
+
+6) exit()  
+    Function  of  which  module  is  executed ?  --->  builtins  module
+    
