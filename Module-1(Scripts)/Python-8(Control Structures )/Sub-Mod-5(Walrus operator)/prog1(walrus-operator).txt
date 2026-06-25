@@ -1,0 +1,15 @@
+Walrus  operator
+--------------------
+1) What  is  the  similarity  between  a :=  25  and  a =  25 ?  --->  Assigns  25  to  object  'a'
+
+2) What  is  the  difference  between  a := 25  and  a =  25 ?  --->  Result  of  a := 25   is  25  but
+												         result  of  a =  25  is  nothing
+
+3) a = 25
+    print(a)
+    How  to  reduce  the  two  statements  to  a  single  statement ?  ---> print(a := 25)
+
+Note:
+1) What  is  the  result  of  a = 25  in  other  languages ?  ---> 25
+
+2) Walrus  operator  introduced  to  python  in  python  3.8
