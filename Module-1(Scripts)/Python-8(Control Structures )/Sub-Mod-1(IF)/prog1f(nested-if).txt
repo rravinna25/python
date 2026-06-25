@@ -1,0 +1,30 @@
+Nested  if
+------------
+1) if   cond1:    
+	  if  cond2:	  
+		stmt1
+		stmt2
+		stmt3	  
+          else:   	  
+		stmt4
+		stmt5
+		stmt6
+   else:    
+	  if  cond3:	  
+		stmt7
+		stmt8
+		stmt9	  
+          else:   	  
+		stmt10
+		stmt11
+		stmt12           
+    stmt13
+
+2) What  is  nested  if ?  ---> if  within  another  if
+
+3) When  are  statements  1 ,  2  and  3  executed  ?  ---> When  both  cond1  and  cond2  are  true
+     When  are  statements  4 ,  5  and  6  executed  ?  --->When  cond1  is  True  and  cond2  is  false
+     When  are  statements  7 ,  8  and  9  executed  ?  --->  When  cond1  is  false  and  cond3  is  true
+     When  are  statements  10 ,  11  and  12  executed  ?  ---> When  both  cond1  and  cond3  are  false
+
+4) When  is  statement13  executed ? --->   Always  executed  irrespective  of  the  conditions  becoz  it  is  outside  if

@@ -1,0 +1,27 @@
+What  is  the  issue  when  elif  is  divided  into  else  and  if
+---------------------------------------------------------------------
+if  cond1:
+	stmt1
+	stmt2
+	stmt3
+else:
+	if   cond2:
+		stmt4
+		stmt5
+		stmt6
+	else:
+		if   cond3:
+			stmt7
+			stmt8
+			stmt9
+		else:
+			stmt10
+			stmt11
+			stmt12
+stmt13
+
+1) What  are  the  three  issues  when  elif  is  divided  into  else  and  if  ?  --->   a) Too  many  indentations
+															        b) No  readability  and  clarity															     
+															        c) Whole  programs  gets  shifted  right
+
+2) Hence  do  not  divide  elif  into  else  and  if
