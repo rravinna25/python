@@ -1,0 +1,36 @@
+__name__  variable
+-----------------------
+1) py  test . py
+    What  is  the  value  of  __name__  variable ?  --->  '__main__'
+
+2) import  test
+    What  is  the  value  of  __name__  variable ?  --->  The  imported  module  name  i.e.  'test'
+
+3) from  cal  import  *
+    What  is  the  value  of  __name__  variable ?  --->  The  module  from  where  members  are  imported  i.e.  'cal'
+
+4) Who  initializes  __name__  variable  and  when  ?  --->  
+				PVM  initializes  __name__  variable  as  soon  as  program (i.e.  module)  is  executed  (or)  imported
+
+5) When  is  the  value  of  __name__  variable   '__main__' ?  --->  When  the  program (i.e. module)  is  executed
+
+6) When  is  the  value  of  __name__  variable  modulename ?  --->  
+										When  the  program (i.e. module)  (or)  members  are  imported
+
+7) What  is  the  type(__name__) ?  ---> <class  'str'>
+
+8) What  is  the  use  of  __name__  variable ?  --->  Informs  whether  the  program (i.e. module) is  executed  (or)  imported
+
+9) abc.py
+    -------
+    3  statements
+    3  statements
+    3  statements
+    How  to  prevent  execution  of  middle  3  statements   when  module  abc  is  imported  elsewhere ? --->					
+						Enclose  those  three  middle  statements  under  if   condition    __name__ == '__main__'
+						i.e.  3  statements
+						       if  __name__ == '__main__':
+							     3  statements
+						       3  statements
+
+10) Finally  __name__  is  an  environment  variable

@@ -1,0 +1,18 @@
+Different  forms  of   *  operator
+---------------------------------------
+1) What  is  the  role  of  *   operator  in  10 * 20  ?  --->  Multiplication
+
+2) What  is  the  role  of  *   operator  in  *object  ?  --->  Unpacks  object  to  elements
+
+3) What  is  the  role  of  *   operator  in  sequence *  3  ?  --->  Repeats  sequence  thrice
+
+4) def   f1(* , a , b): 
+            pass
+   What  is  the  role  of  *   operator ?  --->  Ensures  function  expects  KA's  only
+
+5) def  f1(*a): 
+           pass
+     What  is  the  role  of  *  operator ?  ---> Var-arg  parameter 
+								       i.e.  Any  number  of  arguments  can  be  passed  to  f1()  function
+
+6) Finally  *  operator  is  overloaded  in  python

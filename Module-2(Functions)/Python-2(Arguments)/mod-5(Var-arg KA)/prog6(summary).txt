@@ -1,0 +1,22 @@
+Arguments  summary
+-------------------------
+1) f1(25 , 10.8 , 'Hyd' , True) 
+    What  are  25 , 10.8 , 'Hyd'  and  True  called ?  ---> Positional  Arguments
+
+2) f2(EmpNo = 25 , EmpName = 'Rama  Rao' , Sal = 10000.0)  
+     What  are  EmpNo = 25 , EmpName = 'Rama  Rao'  and  Sal = 10000.0  called ? ---> Keyword  Arguments
+     What  are  EmpNo , EmpName  and  Sal  called  ?  ---> Arguments  of  f2()  function
+
+3) def  f3(a = 10 , b = 20, c = 30):  
+		pass
+    What  are  a = 10 , b = 20 , c = 30  called  ?  --->  Default   arguments  becoz  they  are  in  function  header
+
+4) def   f4(*a):  
+		pass
+    What  is  'a'  called  ? --->  Var-arg  positional  argument
+    What  is  f4  called ?  ---> Var-arg  function
+
+5) def   f5(**a):  
+   	    pass
+    What  is  a  called ? --->  Var-arg  keyword  argument
+    What  is  f5  called  ?  ---> Var-arg  function

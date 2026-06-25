@@ -1,0 +1,19 @@
+ Regular  Keyword  args	 Vs	Var-arg  keyword  args
+--------------------------------------------------------------
+1) def  f1(empno , ename , sal):
+                pass
+     f1(eno = 25 , empname = 'Kiran' , salary = 10000)
+     Is  the  function  call  valid ?  --->  No  becoz  function  is  expecting  arguments  empno , ename  and  sal  but
+                                                           eno , empname  and  salary   are  passed
+
+2) def  f2(**a):
+           pass			
+     f2(eno = 25 , empname = 'Kiran' , salary = 10000)  
+     Is  the  function  call  valid ?  --->  Yes  becoz  argument  names  can  be  anything
+
+3) How  many  arguments  can  be  passed  to  f1()  function ?  --->  Three  becoz  f1()  function  is  expecting  three  arguments
+    How  many  arguments  can  be  passed  to  f2()  function ?  --->  Any  number  of  keyword  arguments  becoz  
+													  function  header  has  **
+
+4) Can  pa's  be  passed  to  f1()  functon  ?  --->  Yes  becoz  function  header  does  not  have  *
+    Can  pa's  be  passed  to  f2()  functon  ?  --->  No  becoz  function  header  has  **
