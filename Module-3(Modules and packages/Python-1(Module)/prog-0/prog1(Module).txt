@@ -1,0 +1,24 @@
+Module
+---------
+1) What  is  a  module  ?  ---> File
+
+2) What  is  the  module  name  when  a  program  is  saved  in  abc.py  ? --->  abc  itself
+
+3) What  does  a  module  have (Total :  4)  ?  --->  A  group  of  classes , functions , objects  and  code(i.e. statements)
+
+4) Can  a  module  be  reused  from  a  different  module ?  --->  Yes  with  import  statement
+
+5) What  is  reusability ?  --->  Using  a  module  from  a  different  module
+
+6) What  are  pre-defined  module  names ?  --->  sys ,  io ,  time , random  , math  , os , builtins  and  so  on
+
+7) What  is  the  advantage  of  module ?  ---> Modular  programming
+
+8) What  is  modular  programming  ? --->  Dividing  a  large  program  into  a  separate , smaller
+								  and   more  manageable  subtasks (or)  modules
+
+9) What  are  the  four  advantages  of  modular  programming ?  --->
+     a) Simplicity  --->  Focus  on  simple  problem  instead  of  focusing  on  entire  program
+     b) Maintainability  ---> Each  person  defines  few  modules
+     c) Reusability   --->  A  module  can  be  reused  by  a  differnet  module
+     d) Scoping  --->  Members  of  the  module  can  be  used  by  modulename . membername

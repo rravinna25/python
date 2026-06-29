@@ -1,0 +1,128 @@
+import  statement
+---------------------
+1) What  does  import  statement  do ?  ---> Imports  module  and  statements  of  the  module
+
+2) What  is  the  syntax  of  import  statement ?  ---> import  modulename / filename
+
+3) import  module
+    What  are  not  imported  ?  ---> Members  of  the  module  
+							i.e. Classes , functions  and  objects
+
+4) Are  the  statements  of  module  called  members  of  the  module ?  ---> No 
+
+5) abc.py
+    -------
+    x = 25
+    statements
+    def  f1():
+          statements
+    class  c1:
+          def  m1(self):
+	        statements
+    What  is  the  module  name ?  ---> abc
+    What  are  the  members  of  abc  module  ?  ---> Object  'x' , Function  f1()  and  class  c1
+    What  about  method  m1() ?  ---> It  is  a  membeer  of  class  c1  but  not  a  member  of  abc  module
+
+6) import  abc
+    What  are  imported ?  --->  Module  abc  and  all  the  statements  of  abc  module
+    What  are  not  imported ? ---> Members  of  abc  moudle 
+						      i.e. Object  'x'  , function  f1()  and  class  c1
+
+7) import  module
+    Can  members  of  the  module  be  used ?  --->  Yes  even  though  they  are  not  imported  
+
+8) How  to  use  member  of  a  module ?  ---> modulename . membername
+
+9) abc.py
+    -------
+     x = 25
+     statements
+     def  f1():
+            statements
+     class  c1:
+            def  m1(self):
+	          statements
+     import  abc
+     How  to  use  object  'x' ?  ---> abc . x
+     How  to  call  function  f1() ?  ---> abc . f1()    
+     How  to  use  class  c1 ?  --->  abc . c1    
+
+10) import  abc
+      print(x)
+      f1()
+      a = c1()
+      Can  members  be  used  directly  without  module  name  prefix ?  --->  No  becoz  they  are  not  imported
+
+11) abc.py
+      -------
+      x = 25
+      stmt-1
+      def  f1():
+            stmt-2
+      class  c1:
+            def  m1(self):
+	          stmt-3
+      What  is  the  difference  between  stmt-1 , stmt-2  and  stmt-3 ?  --->stmt-1  is  statement  of  module,
+                                                                                                                      stmt-2  is  statement  of  function
+                                                                                                                      and  stmt-3  is  statement  of  method
+
+12) Can  a  module  be  used  without  import ?  ---> No
+
+13) What  is  the  pre-requisite  to  use  a  module ?  --->  It  needs  to  be  improted
+
+14) In  other  words,  import  the  module  and  then  we  are  permitted  to  use  the  module
+
+15) Which  module  can  be  used  without  import ?  ---> No  module
+
+16) What  about  builtins  module ?  --->  Members  of  builtins  are  imported  automatically  but  not  builtins  module
+
+17) import  non-existing-module
+     What  does  the  statement  do ?  --->  Raises  ModuleNotFoundError
+
+18) Can  import  statement  be  used  in  the  middle  of  the  program ?  --->  Yes
+
+19) In  other  words , modules  can  be  imported  any  where  in  the  program  but  not  necessarily  at  the
+      begining  of  the  program.
+
+20) Can  a  module  be  imported  after  using  the  module  name  ?  ---> No
+
+21) In  other  words,  module  can  be  used  only  after  it  is  imported
+
+22) How  to  import  multiple  modules  in  a  single  statement ?  ---> import  module1 , module2 , module3
+
+23) What  is  module  alias ? --->  Importing  module  with  another  name
+
+24) How  is  module  alias  achieved ?  ---> With  'as'  keyword
+
+25) import  math  as  m
+      What  does  the  statement  do ? --->  Imports  math  module  with  another  name  'm'
+
+26) import  math  as  m
+      How  to  use  members  of  math  module ?  ---> m . member
+      Is  math . member  valid ?   --->  No  becoz  math  module  is  not  imported
+
+27) In  other  words,  old  name  can  not   be  used  after  module  alias
+
+28) When  is  module  alias  recommended ?  ---> When  the  modulename  is  too  long
+
+29) import  random  as  r ,  sys   as  s  ,  math  as  m
+      What  does  the  statement  do ? --->  Imports  three  modules  with  new  names   'r' , 's'  and  'm'
+
+30) import   sys  , random  , math  as   s , r , m
+      What  does  the  statement  do ? --->  Raises  error  becoz  modules  r  and  m  do  not  exist
+
+31) What  are  three  different  syntaxes  of  import  statement ?  --->  a) import  module
+														   b) import  module1 , module2 , module3 , ....										 
+											c) import  module1  as  m1 , module2  as  m2 , module3  as  m3 , ....
+
+32) Can  module  be  imported  inside  the  function ?  --->  Yes  and  it  is  called  local  import
+
+33) What  is  the  dis-advantage  of  local  import ?  --->  Other  functions  can  not  use  the  module
+														and  
+											  module  cannot  be  used  outside  the  function
+
+34) import  io
+      def   f1():
+	     import   sys
+      Who  can  use  sys  module ?  ---> Just  f1()  function  becoz  it  is  imported  local  to  f1()  function
+      Who  can  use  io  module ?  ---> Whole  program  becoz  it  is  imported  globally

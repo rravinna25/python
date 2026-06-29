@@ -1,0 +1,17 @@
+makedirs()  function
+-----------------------
+1) What  does  makedirs('a/b/c')  do ?  --->   Creates  three  directories  'a' , 'b'  and  'c'  in  the  same  order 
+
+2) makedirs('a/b/c')
+    Where  is  directory  'a'  created ?  --->  In  cwd
+    Where  is  directory  'b'  created ?  ---> In  sub-directory  'a'  of  cwd
+     Where  is  directory  'c'  created ?  ---> In  sub-directory  'a/b'  of  cwd
+
+3) makedirs('a/b/c')
+    What  happens  when  the  directories  a , b  exists  but  not  'c'  ?  --->  Creates  only  directory  'c'  in  directory  a/b
+     What  happens  when  directory  'a'  exists  but  not  'b'  and  'c' ?  ---> Creates  directory  'b'  in  'a'  and  and  'c'  in  'b'
+     What  happens  when  all  the  three  directories  do  not  exist ?  --->
+											Creates  directory  'c'  in  'b'  ,  'b'  in  'a'  and  and  'a'  in  cwd
+     What  happens  when  all  the  three  directories  exists ?  ---> Raises  FileExistsError
+  
+4) Where  is  makedirs()  function  defined  ?  ---> In  os  module

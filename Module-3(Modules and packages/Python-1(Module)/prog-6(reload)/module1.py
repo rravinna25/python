@@ -1,0 +1,6 @@
+# module1.py  (Home  work)
+print('Hyd')
+print('Sec')
+print('Cyb')
+#print('India')
+#print('USA')

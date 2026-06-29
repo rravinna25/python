@@ -1,0 +1,31 @@
+rmdir()  function
+-------------------
+1) What  does  rmdir('x')  do ?  --->  Removes  sub-directory  'x'  from  cwd
+
+2) rmdir('x')
+    What  happens  when  cwd  does  not  have  sub-directory  'x' ?  ---> Raises  FileNotFoundError
+
+3) rmdir('x')
+    What  happens  cwd  has  sub-directory  'x'  but  it  is  not  empty ?  ---> Raises  OSError
+
+4) In  other  words,  directory (or) folder  should  be  empty  before  deletion
+
+5) What  is  the  relation  between  OSError  and  FileNotFoundError ?  --->  OSError  is  parent  to  FileNotFoundError
+
+6) Can  OSError  be  handled  before  FileNotFoundError ?  --->  
+											No  becoz  parent  error  can  not  be  handled  before  child  error
+
+7) In  other  words,  child  error  should  be  handled  before  parent  error
+
+8) What  does  rmdir('a / b')  do ?  --->  Removes  sub-directory  'b'  from  directory  'a'  which  is  in  cwd
+
+9) rmdir('a / b')  
+    What  happens  when  sub-directory  'a'  does  not  have  directory  'b' ?  ---> Raises  FileNotFoundError
+
+10) rmdir('a / b')  
+     What  happens  when  sub-directory  'a'  has  directory  'b'  but  it  is  not  empty ?  ---> Raises  OSError
+
+11) rmdir('a / b')  
+     What  happens  when  cwd   does  not  have  directory  'a' ?  ---> Raises  FileNotFoundError
+
+12) Where  is  rmdir()  function  defined  ?  --->  In  os  module

@@ -1,0 +1,33 @@
+reload()   function
+----------------------
+1) import  mod1
+   import  mod1
+   import  mod1
+   How  many  times  is  mod1  imported ?  ---> Just  once
+
+2) In  general,  a  module  can  be  imported  just  once  but  not  again  and  again
+
+3) In  other  words,  same  module  can  not  be  imported  multiple  times 
+
+4) What  does  reload(module)  do ?  --->  Loads  the  module  into  memory
+								              and
+								 also  executes  the  module
+
+5) Where  is  reload()  function  defined ?  ---> In  importlib  module
+
+6) When  is  reload()  function  recommended ?  --->  When  same  module  needs  to  be  imported  again,  use  reload()  function
+
+7) reload('mod1')
+    Is  the  statement  valid  ?  --->  No  becoz  function  expects  module  but  string  is  passed
+
+8) importlib . reload(mod1)
+    Can  mod1  be  used  without  import ?  ---> No
+
+9) In  other  words,  module  can  not  be  used  without  import
+
+10) run_module('mod1')
+      reload(mod1)
+      What  is  the  similarity ?  ---> Both  of  them  executes  mod1
+      What  is  the  difference ?  ---> 
+      a) run_module('mod1')  --->  mod1  need  not  be  imported  becoz  argument  is  a  string  module
+      b) reload(mod1)  --->   mod1  has  to  be  imported  becoz  argument  is  a  module

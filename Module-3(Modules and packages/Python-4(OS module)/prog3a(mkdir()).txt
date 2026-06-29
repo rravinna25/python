@@ -1,0 +1,15 @@
+mkdir()  function
+--------------------
+1) What  does  mkdir('Hyd')  do ?  --->  Creates  a  sub-directory  'Hyd'  in  cwd
+
+2) mkdir('Hyd')
+    What  happens  when  directory  'Hyd'  already  exists ?  ---> Raises  FileExistsError
+
+3) What  does  mkdir('India/Telangana')  do ?  --->   Creates  a  directory  'Telangana'  in  sub-directory  'India' 
+										   which  is  in  cwd
+
+4) mkdir('India/Telangana')
+    What  happens  when  directory  'Telangana'  already  exists ?  ---> Raises  FileExistsError
+     What  happens  when  cwd  does  not  have  'India'  directory ?  --->  Raises  FileNotFoundError
+
+5) Where  is  mkdir()  function  defined  ?  --->  In  os  module

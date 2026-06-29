@@ -1,0 +1,38 @@
+ sys . path
+------------
+1) import  module
+    Where  is  the  module  searched ?  --->   In  the  directories  (or)  folders   of  sys . path
+
+2) What  is  the  first  directory  in  sys . path ?  ---> Current  working  directory(Cwd)
+     What  are  the  remaining  directories  of  sys . path ?  --->  Standard  directories
+
+3) import  module
+    What  happens  when  the  module  is  not  found  in  all  the  directories  of  sys . path ?  --->  Raises  ModuleNotFoundError
+
+4) import  module
+    What  happens  when  the  module  is  found  in  the  directories  of  sys . path ?  --->  
+												Module  gets  imported  from  the  directory  where  it  is  found
+  
+5) Can  sys . path  be  modified ?  ---> Yes  becoz  it  is  a  list
+
+6) What  action  to  be  made  when  the  module  is  in  a  different  directory  (or)  folder ? --->
+													Append  the  new  directory  (or)  folder  to  sys . path
+
+7) How  to  append  a  new  directory  (or)  folder  to  sys . path ?  ---> With  append()  method  of  list  class
+
+8) sys . path . append('c:\\Rravinna  Reddy')
+    Are  changes  made  to  sys . path  visible  to  other  programs ?  --->  No
+
+9) In   other  words,  changes  made  to  sys . path  are  visible  to  current  program  and
+     lost  soon  after   program  terminates
+
+10) sys . path . append('c:\Hyd')
+      Is  the  statement  valid ?  ---> No  becoz  \H  does  not  exist
+      
+11) Hence  \  in  quotes  should  be  denoted  by  \\      
+
+12) Is  sys . path  a  tuple  ?  ---> No  and  it  is  list
+
+13) When  is  sys . path  initialized ?  --->  As  soon  as  sys  module  (or)  sys.path  is  imported 
+                                                                  Eg:  import  sys
+                                                                  Eg:  from  sys  import  path
