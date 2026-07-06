@@ -1,0 +1,66 @@
+Package
+----------
+1) What  is  a  package ?  --->  A  group  of  related  modules  and  sub-packages
+
+2) What  is  another  name  of  package ?  --->  Folder  (or)  directory
+
+3) What  is  the  rule  for  every  package ?  --->  It  has  to  be  a  sub-directory  of  cwd
+
+4) Can  package  be  a  sub-directory  of  a  different  directory ?  --->  
+								No  and  it  should  a  sub-directory  of  current  working  directory(cwd)
+
+5) What  are  the  two  ways  to  import  module  of  a  package ?  ---> a) import  package . module
+													       b) from  package  import  module
+
+6) import  module
+    import  package . module
+    What  is  the  difference ?  --->   First  import  imports  module  of  cwd	
+									and
+							 2nd  import  imports  module  of  sub-directory
+
+7) import  module
+    Where  does  module  reside ?  --->In  cwd
+    import  package . module
+    Where  does  module  reside ?  ---> In  subdirectory  (i.e. package)
+
+8) How  to  import  members  of  the  module  in  the  package ?  --->  from  package . module  import  * (or)  members
+
+9) from  module  import  *
+    from  package . module  import  *
+    What  is  the  difference  ?  ---> 1st  statement  imports  all  the  members  of  module  which  is  in  cwd
+									and
+							 2nd  statement  imports  all  the  members  of  module  which  is  in  sub-directory
+							 (i.e. package)
+
+10) from  package  import  module . member
+      Is  the  statement  valid ?  --->  No  becoz  import  clause  of  from  statement  can  not  use  '.'  operator
+
+11) Where  can  '.'  be  used ?  --->  a) In  from  clause							
+						        b)  In  import  statement
+
+12) import  package . module . member
+      Is  the  statement  valid ?  ---> No  becoz  import  statement  cannot  import  members
+
+13) In  other  words,  from  statement  can  import  members  but  not  import  statement
+
+14) import  package . module
+     How  to  use   members  of  the  module ?  ---> package . module . member
+
+15) from  package  import  module
+      How  to  use  members  of  the  module ?  ---> module . member
+           
+16) from  package . module  import  member
+      How  to  use   members  of  the  module ?  ---> Just  member
+
+17) from  package  import  module
+      Can  members  of  the  module  be  used  with  package . module . member ?  ---> No  becoz  package  is  not  imported
+
+18) from  package . module  import  *
+      Can  members  of  the  module  be  used  with   module . member ?  ---> No  becoz  module  is  not  imported
+      
+19) import  package
+      What  is  imported ?  --->  Only  package  but  not  modules  of  the  package
+
+20) import  package
+     How  to  use  members  of  the  module  in  the  package ?  --->
+											Not  possible  becoz  module  of  the  package  is  not  imported
