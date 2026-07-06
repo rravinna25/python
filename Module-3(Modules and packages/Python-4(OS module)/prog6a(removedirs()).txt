@@ -1,0 +1,19 @@
+ removedirs()  function
+--------------------------
+1) What  does  removedirs('p/q/r')  do ?  --->  Removes  sub-directory  'r'  from  directory  'q',
+									 removes  sub-directory  'q'  from  directory  'p'  and
+									 removes  sub-directory  'p'  from  cwd
+
+2) In  other  words,  directories  are  deleted  in  the  reverse  order
+
+3) removedirs('p/q/r')
+    What  happens  when  directory  p  (or)  q  (or)   r  does  not  exist ?  --->  Raises  FileNotFoundError    
+     
+4) removedirs('p/q/r')
+    What  happens  when  all  the  three  directories  p , q  and  r  are  not  empty ?  ---> Raises  OSError    
+    What  happens  when  directory  'r'  is  empty  but  not  'p'  and  'q' ?  --->   
+													Removes  only  directory  'r'  but  not  'p'  and  'q'
+    What  happens  when  directories  'r'  and  'q'  are  empty  but  not  'p' ?  --->  Removes  directories  'r'  and  'q'  but  not  'p'
+     What  happens  when  all  the  three  directories  p , q  and  r  are  empty ?  --->   Removes  all  the  three  directories       
+
+5) Where  is  removedirs()  function  defined  ?  --->  In  os  module

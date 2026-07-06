@@ -1,0 +1,23 @@
+listdir()  function
+--------------------
+1) What  does  listdir('x')  do ?  ---> Returns  all  the  files  and  sub-directories  of  sub-directory  'x'  which  
+							  is  in  cwd  in  the  form   of  list  of  strings
+
+2) listdir('x')
+    What  happens  when  directory  'x'  does  not  exist ?  ---> Raises  FileNotFoundError
+
+3) What  does  listdir('.')  do ?  --->  Returns  all  the  files  and  sub-directories  of  cwd  in  the  form  of  list  of  strings
+
+4) What  is  '.'  called ?  ---> cwd(current  working  directory)
+     What  is  ..   called ? ---> Parent  directory
+
+5) What  does  listdir('c:\\sairam')  do ?  --->  
+						Returns  all  the  files  and  sub-directories  of  c:\sairam  in  the  form  of  list  of  strings
+
+6) Is  listdir('c:\sairam')  valid ?  ---> No  becoz  \s  escape  sequence  does  not  exist
+
+7) How  to  use  \  in   quotes ?  --->  Use  one  more  \  i.e.  \\
+
+8) print('\\')  (or)  print(R'\')
+
+9) Where  is  listdir()  function  defined ?  ---> In  os  module

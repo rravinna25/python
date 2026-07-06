@@ -1,0 +1,19 @@
+rename()  function
+---------------------
+1) What  does  rename('a.txt' , 'b.txt')  do ?  ---> Renames  file  a.txt  to  b.txt  where  a.txt  is  a  file  of  cwd
+
+2) rename('a.txt' ,  'b.txt')
+    What  happens  when  file  'a.txt'  does  not  exist ?  ---> Raises  FileNotFoundError
+    What  happens  when  file  'b.txt'  already  exists ?  ---> Raises  FileExistsError
+
+3) What  does  rename('x' , 'y')  do ?  --->  Renames  sub-directory  'x'  to  'y'  where  'x'  is  a  sub-directory  of  cwd
+
+4) rename('x' , 'y')
+    What  happens  when  directory  'x'  does  not  exist ?  ---> Raises  FileNotFoundError
+    What  happens  when  directory  'y'  already  exists ?  ---> Raises  FileExistsError
+
+5) Can  non-empty  directory  be  renamed ?  ---> Yes
+
+6) In  other  words,  non-empty  directory  can  not  be  deleted  but  it  can  be  renamed
+
+7) Where  is  rename()  function  defined ?  ---> In  os  module

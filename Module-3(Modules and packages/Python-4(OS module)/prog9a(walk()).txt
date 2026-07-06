@@ -1,0 +1,27 @@
+walk()  function
+-----------------
+1) What  does  walk('sairam')  do ?  --->  Returns  an  empty  generator  object  where  'sairam'  is  a  sub-directory  of  cwd
+
+2) g = os . walk('sairam')
+    What  does  1st  call  to  next(g)  do ?  ---> Returns  a  tuple  of   3 elements
+    What  is  the  first  element  of  tuple ?  ---> Path  of  'sairam'  directory  
+    What  is  the  2nd  element  of  tuple ?  ---> All  the  sub-directories  of  sairam  in  the  form  of  list
+    What  is  the  3rd  element  of  tuple ?  --->  All  the  files  of  sairam  in  the  form  of  list
+
+3) What  does  2nd  call  to  next(g)  do ?  ---> Returns  2nd  tuple  like   ('sairam\\karnataka', ['banglore'], ['file1.txt'])
+
+4) What  does  3rd  call  to  next(g)  do ?  ---> Returns   3rd  tuple  like  ('sairam\\karnataka\\banglore', [] , [])
+
+5) What  does  4th  call  to  next(g)  do ?  --->Returns  4th  tuple  like  ('sairam\\Telangana', ['Hyd', 'Warangal'] , ['file1.txt', 'file2.txt'])
+
+6) What  does  5th  call  to  next(g)  do ?  ---> Returns  5th  tuple   like  ('sairam\\Telangana\\Hyd', ['Banjara Hills'], ['file1.txt'])
+
+7) What  does  6th  call  to  next(g)  do ?  --->  Returns  6th  tuple  like  ('sairam\\Telangana\\Hyd\\Banjara Hills', [], [])
+
+8) What  does  7th  call  to  next(g)  do ?  --->  Returns  7th  tuple  like  ('sairam\\Telangana\\Warangal', [], [])
+
+9) What  does  8th  call  to  next(g) do  ?  ---> Raises  StopIteration  becoz  all  the  directories  are  exhausted
+
+10) walk()  function  is  same  as  listdir()  function  except  that  it  works  in  recursive  manner
+
+11) Where  is  walk()  function  defined ?  ---> In  os  module
