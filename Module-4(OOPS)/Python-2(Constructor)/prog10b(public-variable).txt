@@ -1,0 +1,26 @@
+Public  instance  variable
+-----------------------------
+1) What  is  the  name  of  public  instance  variable ?  --->  Just  variablename
+                                                                                             i.e.  It  does  not  start  with  double  underscore
+
+2) obj . x = 10
+    What  is   'x'  called ?  --->  Public  instance  variable  becoz  it  is  not  starting  with  __
+
+3) To  whom  is  public  instance  variable  visible ?  --->  Whole  program
+											i.e.  Every  class ,  every  function  and  outside  the  class
+    From  whom  is  public  instance  variable  hidden  ?  --->  None
+
+4) Are  public  instance  variables  exposed  to  whole  program  ?  --->  Yes
+
+5) Can  a  class  use  public  variable  of  a  different  class  object  directly ?  ---> Yes  becoz  it  is  visible
+    Can  a  function  use  public  variable  of  object  directly ?  ---> Yes  becoz  it  is  visible
+    Can  public  variable  be  used  from  outside  the  class  directly ?  ---> Yes  becoz  it  is  visible
+
+6) Finally  who  can  use  public  variable ?  ---> Whole  program
+
+7) Where  can  public  instance  variable  be  initialized ?  ---> Any  where  in  the  program
+
+8) What  is  the  dis-advantage  of  public  instance  variable  ?  --->  There  is  no  data  hiding
+
+9) In  other  words,  data  of  the  object  is  exposed  to  other  classes ,  functions  and  outside  the  class
+    which  is  not  recommended

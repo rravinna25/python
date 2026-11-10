@@ -1,0 +1,55 @@
+Constructor
+--------------
+1) What  does  a  constructor  do ? --->  Initializes  variables  of  the  object
+
+2) In  other  words,  constructor  does  object  initialization
+
+3) Is  constructor  a  function  (or)  method ?  ---> Method  i.e. Special  method
+
+4) What  is  the  name  of  constructor ? ---> __init__
+
+5) def  __init__(self , args):
+           Statements
+
+6) When  is  constructor  executed ?  --->  As  soon  as  object  is  created
+
+7) What  does  classname()  do ?  --->  Creates  an  object  and  automatically  executes  constructor
+
+8) Can  constructor  have  arguments ?  --->  Yes  apart  from  self
+
+9) How  many  arguments  can  a  constructor  have ?  --->  Any  number  of  arguments
+						                                             i.e.  0 , 1  (or)  more  than  1  apart  from  self 
+
+10) What  is  self  wrt  constructor  ?  --->  That  Object  which  is  being  created
+
+11) a = classname()
+     What  is  self ?  ---> Object  'a'  becoz  object  'a'  is  created
+
+12) How  is  constructor  different  from  method ?  --->  Method  is  not  executed  unless  it  is  called  but
+									                  constructor  is  automatically  executed  as  soon  as  object  is  created
+
+13) Can  constructor  be  called  explicitly ?  --->  Yes  (only  in  python)
+
+14) How  to  call  constructor  explicitly ?  --->  object . __init__(arguments)
+
+15) What  does  constructor  do  when  it  is  called  explicitly ?  --->  Modifies  values  of  the  object
+
+16) What  does  constructor  do  when  it  is  automatically  executed ?  ---> Initializes  object
+
+17) What  can  constructor  return ?  --->  Only  None
+
+18) Where  is  None  returned  to  ?  --->  Constructor  call  if  it  is  called  explicitly  and
+								  ignored  when  it  is  automcatically  executed
+
+19) What  happens  when  constructor  returns  other  than  None ?  --->  Object  creation  fails
+														     i.e.  classname()  throws  error
+
+20) How  many  constructors  can  be  in  a  class ?  ---> Multiple
+
+21) What  happens  when  class  has  multiple  constructors ?  --->  Last  constructor  is  alive  and  rest  are  deleted
+
+
+Note:
+1) When  is  __str__()  executed ?  ---> As  soon  as  object  is  printed
+
+2) When  is  constructor  executed ?  ---> As  soon  as  object  is  created

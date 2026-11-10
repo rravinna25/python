@@ -1,0 +1,14 @@
+hasattr()  function
+-----------------------
+1) What  does  hasattr(object , variable)  do  ?  ---> Returns True  when  object  has  the  variable  and  False  otherwise
+								
+2) What  does  hasattr(classname ,  method)  do ?  ---> Returns True  when  class  has  the  method  and  False  otherwise
+								
+3) What  does  hasattr(object ,  method)  do ?  --->  Returns True  when  class  has  the  method  and  False  otherwise
+
+4) What  does  hasattr(classname ,  instance-variable)  do ?  --->  Returns  False  becoz  class  does  not  have  instance  variable
+
+5) What  does  hasattr(classname ,  static-variable)  do ?  --->  
+										Returns  True  when  class  has  the  static  variable  and  False  otherwise
+
+6) Where  is  hasattr()  function  defined ?   ---> In  builtins  module

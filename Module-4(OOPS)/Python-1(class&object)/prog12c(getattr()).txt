@@ -1,0 +1,18 @@
+getattr()  function
+---------------------
+1) What  does  getattr()  function  do  ?  --->  Returns  value  of  variable  in  the  object
+
+2) What  are  the  two  arguments  of  getattr()  function  ?  ---> Object  and  Variable
+
+3) What  does  getattr(object , valid-variable)  do  ?  ---> Returns  value  of  the  variable  which  is  in  the  object
+    What  does  getattr(object , invalid-variable)  do  ?  ---> Raises  AttributeError
+
+4) print(object . variable)
+    print(getattr(object , variable))
+    What  is  the  difference ?  --->  object . variable  returns  value  of  the  variable  at  design  time
+							 but  getattr()  returns  value  of  the  variable  at  runtime
+
+5) object . variable --->  Programmer  decides  which  variable  is  to  be  accessed  at  design  time
+    getattr(object , input())  --->  Client  decides  which  variable  is  to  be  accessed  at  runtime
+
+6) Where  is  getattr()  function  defined ?  ---> In  builtins  module

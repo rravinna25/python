@@ -1,0 +1,16 @@
+Public  method
+-----------------
+1) What  is  the  name  of  public  method ?  --->  Just  method  name
+
+2) class   c1:
+	    def   m1(self):
+	            statements
+   What  is  m1()  called  ?  ---> public  method  becoz  it  is  not  starting  with  __
+
+3) To  whom  is  public  method  visible ?  ---> Whole  program
+    From  whom  is  public  method  hidden  ?  ---> None
+
+4) What  is  the  advantage  of  public  method ?  --->
+								It  can   be  called  by  same  class , other  classes, functions  and  outside  the  class
+
+5) Finally  instance  variables  are  usually  private  and  methods  are  usually  public

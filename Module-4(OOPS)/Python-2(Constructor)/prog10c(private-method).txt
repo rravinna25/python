@@ -1,0 +1,23 @@
+Private  method
+-------------------
+1) How  is  private  method  denoted ?  --->  With  __  (Double  underscore  but  not  single  underscore)
+
+2) What  is  private  method  name ?  ---> __methodname
+
+3) class   c1:
+	    def   __m1(self):
+	            statements
+    What  is  __m1()  called  ?  --->  private  method  becoz  it  starts  with  __
+
+4) To  whom  is  private  method  visible ?  ---> All  the  methods  of  same  class
+     From  whom  is  private  method  hidden  ?  --->  All  other  classes , functions  and  outside  the  class
+
+5) Who  can  call  private  method ?  ---> All  the  methods  of  same  class
+
+6) Can  a  class  call  private  method  of  a  different  class  directly ?  ---> No  becoz  it  is  not  visible
+    Can  a  function  call  private  method  of  a  class  directly ?  --->  No  becoz  it  is  not  visible
+    Can  private  method  be  called  from  outside  the  class  directly ?  ---> No  becoz  it  is  not  visible
+
+7) How  to  call  private  method  indirectly ?  --->  obj . _classname__method()
+
+8) Finally  hide  data  but  not  methods  becoz  method  contains  statements  but  not  data

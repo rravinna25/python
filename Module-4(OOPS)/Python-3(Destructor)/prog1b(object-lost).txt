@@ -1,0 +1,19 @@
+Summary
+-----------
+1) When  is  an  object  lost ?  ---> When  it  does  not  have  any  reference 
+
+2) When  is  a  reference  lost ?  ---> del  ref
+							      (or)
+							   soon  after  program  terminates
+
+3) del  ref
+    What   are  the  three  events ?  ---> a) Deletes  reference
+								b) Executes  destructor  
+								c) Deletes  object  
+
+4) a = c1()
+    a = c1()
+   What  are  the  three  events  for  2nd  statement  a = c1() ? --->
+   1) Creates  a  new  object  with  reference  'a'  and  also  executes  contstructor 
+   2) Executes  destructor  for  the  1st  object  as  it  does  not  have  reference
+   3) Deletes  1st  object  

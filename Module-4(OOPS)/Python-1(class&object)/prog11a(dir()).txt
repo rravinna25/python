@@ -1,0 +1,22 @@
+dir()  function
+-----------------
+1) What  does  dir(classname)  do ? --->  Returns  all  the  methods  of  the  class  in  the  form  of  list  of  strings
+
+2) What  does  dir(int)  do ?  --->  Returns  all  the  methods  of  int  class  in  the  form  of  list  of  strings
+
+3) What  does  dir(obj)  do ?  --->  Returns  all  the  instance  variables  of  the  object  and   methods  of  the  class
+						       in  the  form  of  list  of  strings
+
+4) a = 3 + 4j
+    What  does  dir(a)  do ?  --->  Returns  all  the  instance  variables  of  object  'a'  (i.e.  real  and  imag)  and
+						   methods  of  complex  class  in  the  form  of  list  of  strings
+
+5) What  does  dir(module)  do ?  ---> Returns  all  the  members  of  module  and  environment  variables  in  the  form 
+							   of  list  of  strings
+
+6) What  does  dir(No-args)  do ?  --->  Returns  all  the  members  of  current  module  and  environment  variables
+							      in  the  form  of  list  of  strings
+
+7) Where  is  dir()  function  defined ?  --->  In  builtins  module
+
+8) What  is  the  argument  of  dir()  function ?   --->  classname , object  (or)  module

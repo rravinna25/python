@@ -1,0 +1,53 @@
+Destructor
+-------------
+1) What  does  a  destructor  do ?  --->  Closes  all  those  connections  which  are  held  by  the  object
+						               like  database  connection ,  network   connection ,  file  connection  and  so  on
+							       Eg: def  __del__(self):
+									     close  database  connection
+									     close  network  connection
+									     close  file
+
+2) Is  destructor  a  function  (or)  method ?  ---> Method  i.e. Special  method
+
+3) In  other  words,  it  performs  clean-up  operation
+
+4) What  is  the  name  of  destructor ? --->  __del__
+
+5) When  is  destructor  executed ?  ---> Just  before  object  is  lost
+
+6) a = c1()
+    del  a
+    What  are  the  3  events ?  --->  a) Deletes  reference  'a'
+							b) Executes  destructor
+							c) Pvm  deletes  object  as  it  does  not  have  reference
+
+7) When  is   an  object  lost ?   --->  When  it  does  not  have  reference
+
+8) Who  deletes  object ?  --->  PVM  but  not  destructor
+
+9) What  is  self  wrt  destructor  ?  --->  That  object  which  is  being  lost
+
+10) Can  destructor  have  arguments ?  --->  No  apart  from  self
+
+11) Can  destructor  be  called  explicitly ?  --->  Yes  with  object . __del__()
+
+12) Is  object  lost  after  execution  of  destructor ?  ---> Yes  when  it  is  automatically  executed  
+														and  
+											      No  when  it  is  called  explicitly														
+
+13) Can  destructor  return  a  value ? --->  Yes  and  it  can  return  any  python  object
+
+14) If  destrcutor  returns  25,  where  is  25  returned  to ?  --->
+												Destructor  call  when  it  is  called  expliciltly  and
+												ignored  when  it  is  automatically  executed
+
+15) How  many  destructors  can  be  in  a  class ?  --->  Multiple
+
+16) What  happens  when  there  are  multiple  destructors ? ---> Last  destructor  is  alive  and  rest  are  deleted 
+
+17) Is  object  lost  without  destructor  in  the  class ?  --->  Yes
+
+18) What  happens  when  class  does  not  have  destructor ? --->  
+											The  connections , which  are  held  by  the  object ,  are  not  closed
+
+19) Therefore  other  programs  cannot  use  those  connections
