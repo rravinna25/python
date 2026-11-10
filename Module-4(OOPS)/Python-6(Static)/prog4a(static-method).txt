@@ -1,0 +1,61 @@
+static  method
+-----------------
+1) class      c1:
+          @staticmethod
+          def   m1():
+	         statements
+    Is  m1  a  static  method ? ---> Yes  becoz  it  has  @staticmethod  decorator
+
+2) Is  @staticmethod  decorator  mandatory  (or)  optional ? --->  Optional
+
+3) What  is  the  mandatory  argument  for  static  method ?  --->  Nothing  like  cls  and  self
+
+4) How  many  arguments  can  a  static  method  have ?  --->  0 , 1  (or)  morethan  one
+
+5) How  is  static  method  called  ?  ---> Through  classname
+							         i.e.  classname . method()
+
+6) How  to  call  static  method  m1()  of  class  c1 ?  ---> c1 . m1()
+
+7) object . static-method()
+    Can  static  method  be  called  wrt  object  ?  ---> Yes  but  not  recommended
+
+8) What  does  a  static  method  do ?  ---> Performs  operations  on  static  variables
+
+9) What  is  the  advantage  of  static  method ?  --->  It  can  be  called  direclty  even  though  program  does  not  have  objects
+
+10) How  to  use  static  variable  in  static  method ?  ---> classname . variable
+
+11) How  to  add  static  variable  to  a  class  in  static  method ? ---> classname . variable  = value
+
+12) class   c1:
+	   def   m1(self):
+		  statements
+      Is  m1()  a  static  method  (or)  instance  method ? --->  Instance  method  becoz  it  has  got  argument  self
+
+13) c1 . m1(25)      
+      Can  instance  method  be  called  thru  classname ?  --->  Yes  
+      What  is  self  ?  ---> 25
+
+14) a = c1()
+      a . m1()      
+      What  is  self ?  ---> Object  'a'
+
+15) class   c1:
+	   @staticmethod
+	   def   m1(self):
+		  statements
+      c1 . m1(25)
+      Is  m1()  a  static  method  (or)  instance  method ?  --->  static  method  becoz  it  has  got  the  decorator  @staticmethod
+      What  is  self ?  ---> 25
+
+16) class   c1:
+	    @staticmethod
+	    def   m1(self):
+		   statements
+      a = c1()
+      Is  a . m1()  valid  ?  ---> No  becoz  m1()  method  expects  an  argument  but  nothing  is  passed  from  the  method  call     
+      
+
+Note:
+static  method  and  class  method   are  almost  same

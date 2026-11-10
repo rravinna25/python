@@ -1,0 +1,32 @@
+static  Variable  Vs  non-static  Variable
+----------------------------------------------
+1) What  is  another  name  of  static  variable ? ---> class  variable
+    What  is  another  name  of  non-static  variable ? ---> Instance  variable
+
+2) Where  does  static  variable  reside ?  ---> Outside  the  object (just  once)
+    Where  does  non-static  variable  reside ?  ---> Inside  the  object
+
+3) Is  static  variable  global  (or)  local ?  --->  Global  to  all  the  objects  of  same  class
+    What  about  non-static  variable ?  ---> Local  to  the  object
+
+4) How  to  use  static  variable  in  three  ways ?  --->  a)  classname . variable (Any  where  in  the  program)
+										       b) cls . variable  (Inside  class  method)
+									               c) object . variable  when  instance  variable  does  not  exist
+    How  to  use  instance  variable ?  --->  object . variable  (Any  where  in  the  program)
+
+5) How  to  add  static  variable  to  the  class  in  three  ways ?  --->  a) variable = value  (Inside  the  class)
+												 b) classname . variable = value  (Any  where  in  the  program)
+													      c) cls . variable = value  (Inside  class  method)
+    How  to  add  instance  variable  to  the  object ?  ---> object . variable = value (Any  where  in  the  program)
+
+6) How  to  obtain  all  the  static  variables  of  the  class ?  ---> classname . __dict__
+    How  to  obtain  all  the  instance  variables  of  the  object ?  ---> object . __dict__
+
+7) How  many  instances  are  needed  to  use  static  variable ?  --->
+										Zero  becoz  static  variable  can  used  directly  thru  class  name
+    How  many  instances  are  needed  to  use  non-static  variable ?  ---> At  least  one
+
+
+
+Note:
+Does  python  have  static  keyword ?  ---> No

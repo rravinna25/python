@@ -1,0 +1,54 @@
+deleter  method
+-------------------
+1) @temp . deleter
+    def  temp(self):
+          del   self . _variable
+
+2) What  does  deleter  method  do ?  ---> Deletes  the  2nd  variable  i.e. Backup  variable
+
+3) When  is  deleter  method  executed ?  --->  When  instance  variable  is  deleted
+
+4) del  object . variable
+    Which  method  is  executed ?  --->  deleter  method    
+
+5) del  obj . variable  
+     How  many  variables  are  deleted  ?  --->  Two  i.e.  original  variable  and  backup  variable
+
+6) del  object . variable
+     What  happens  when  class  does  not  have  deleter  method ?  --->  											
+											Raises  error  when  the  class  has  getter  and  setter  methods
+
+7) In  other  words,  it  is  not  possible  to  delete  variable  of  the  object  without  deleter  method  when  the  class  has
+    getter  and  setter  methods
+
+8) del  reference  (or)  object
+     Is  deleter  method  executed  ?  ---> No
+     Which  method  is  executed  ?  ---> Destructor  but  not  deleter
+
+9) del  local-variable
+    del  global-variable
+    del  classname . static-variable
+    Is  deleter  method  executed  ?  ---> No 
+
+10) In  other  words,  deleter  method  is  executed  only  when  instance  variable  is  deleted
+
+11) What  is  the  name  of  deleter  method ?  ---> Instance  variable  name
+     What  is  the  name  of  deleter  method  if  instance  variable  name  is  temp ?  ---> temp  itself
+
+12) What  is   the  decorator  to  define  a  deleter  method ?  ---> @Instancevariablename . deleter
+													  Eg: @temp . deleter
+
+13) How  many  arguments  can  a  deleter  method  have ?  --->  No  arguments  apart  from  self
+
+14) Can  class  have  deleter  method  without  getter  and  setter  methods  ?  --->  No
+
+15) In  other  words,  deleter  method  can  be  defined  only  when  class  has  getter  and  setter  methods
+
+16) In  which  order  can  getter , setter and  deleter  methods  be  defined ?  ---> 
+														   a)  getter  method  first																								
+													           b) setter  and  deleter  methods  in  any  order
+
+17) Can  class  have  multiple  deleter  methods ?  --->  Yes
+                                                                                      i.e. One  for  each  instance  variable
+
+18) Can  deleter  method  be  called  explicitly ?  --->  No  and  it  is  automatically  executed  when  instance  variable  is  deleted

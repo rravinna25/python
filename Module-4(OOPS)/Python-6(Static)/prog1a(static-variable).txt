@@ -1,0 +1,83 @@
+Static  Variable
+------------------
+1) What  is  a  static  variable ?  --->  A  variable  which  is  global  to  all  the  objects  of  same  class
+    What  about  instance  variable (or)  non-static  variable ? ---> Local  to  the  object
+
+2) Where  does  static  variable  reside  (inside  the  object / outside ) ? ---> Outside  the  object
+
+3) static  variable  is  a  member  of  what ?  --->  It  is  a  member  of  class  but  not  object
+
+4) In  other  words,  both  method  and  static  variable  are  members  of  the  class
+
+5) How  to  add  static  variable  to  a  class ?  --->  classname . variable = value  any  where  in  the  prograam
+
+6) class   c1:
+	  x = 25
+     Is  'x'  a  static  variable ?  --->  Yes  becoz  it  is  being  initialized  inside  the  class	  
+
+7) class   c1:
+	  c1 . x = 25
+     Is  classname  c1  mandatory ?  ---> No  becoz  'x'  is  being  initialized  inside  the  class  c1
+    						              i.e.  class   c1:
+							                 x = 25
+
+8) class   c1:
+	   def   m1(self):
+		 c1 . y = 30
+    Is  classname  c1  mandatory ?  --->  Yes  and  'y'  becomes  a  local  variable  without  classname  prefix
+
+9) class   c1:
+	   pass
+    c1 . z = 30
+    Is  classname  c1  mandatory ?  --->  Yes  and  'z'  becomes  a  global  variable  without  classname  prefix
+
+10) How  is  static  variable  used ?  ---> Thru  classname
+                                                                i.e.  classname . variable
+
+11) How  to  use  static  variable  'x'  of  class  c1 ?  --->  c1 . x
+
+12) When  is  static  variable  recommended  ?  --->  To  avoid  data  redundancy
+
+13) In  other  words,  when  same  value  is  to  be  represented  in  every  object,  it  leads  to  data  redundancy(i.e. duplication)
+      Therefore  static  variable  is  used  as  an  alternative
+
+14) Can  collegename  be  a  static  variable ?  --->  Yes  when  all  the  students  study  in  same  college
+
+15) In  other  words,  collegename  is  represented  only  once  which  is  being  used  by  all  the  students 
+
+16) Can  rollnumber  be  a  static  variable ?  ---> No  becoz  each  student  has  got  a  different  roll  number
+
+17) How  to  obtain  all  the  static   variables  of  a  class ?  ---> classname . __dict__
+
+18) What  does  c1 .  __dict__  do ? --->  Returns  all  the  static  variables  of  class  c1  along  with  environment  variables
+								 in  the  form  of  dictionary
+
+19) object . static-variable
+     Can  static  variable  be  used  wrt  object  ?  ---> 	
+							Yes  but  not  recommended  becoz  it  does  not  belong  to  any  one  particular  object
+
+20) If  an  object  modifies  value  of  a  static  variable ,  are  changes  visible  to  remaining  objects ?  --->												
+															Yes  becoz  it  is  global  to  all  the  objects
+
+21) What  are  the  four  advantages  of  static  variable ?  --->      
+      a) It  can   be  used  directly  without  an  object  becoz  it  is  accessed  through  classname      
+      b) No  data  redundancy      
+      c) Data  sharing  is  permitted      
+      d) No  memory  wastage
+
+22) Can  instance  variable  be  used  without  an  object ?  ---> No  becoz  non-static  vaiable  does  not  exist  without  object
+
+
+Note:
+class   c1:
+	a = 10
+	def   m1(self):
+		b = 20
+		c1 . c = 30
+		self . d = 40
+e = 50
+1) What  is  'a' ?  ---> static  variable  of  class  c1
+2) What  is  'b' ?  ---> Local  variable  of  m1()  method  in  class  c1
+3) What  is  'c' ?  ---> static  variable  of  class  c1
+4) What  is  'd' ?  ---> Instance  variable
+5) What  is  'e' ?  ---> Global  variable

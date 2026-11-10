@@ -1,0 +1,98 @@
+Inheritance
+--------------
+1) What  is  inheritance ?  --->  A  class  is  acquiring  properties  of  another  class
+
+2) What  are  the   properties  of  a  class ?   --->  static  variables  and  methods
+
+3) class  c2(c1):
+             pass
+    What  does  class  c2(c1)  do ?  --->  Derives  class   c2  from  class  c1
+
+4) What  are  inherited  from  class  c1  to  c2 ?  --->  All  the  static  variables  and  methods  of  class  c1
+
+5) class  c1:
+             3  static  variables  and  4  methods
+     class   c2(c1):
+              5  static  variables  and  6  methods
+    What  does  class  c2  have  finally ?  --->  3 + 5 = 8  static  variables  and  4 + 6 = 10  methods
+
+6) In  other  words,  every  member  of  class  c1  is  inherited  to  c2
+
+7) Are  instance  variables  inherited ?  --->  No  becoz  they  are  variables  of  the  object  but  not  variables  of  the  class
+
+8) class  c2(c1):
+           New   members
+     What  does  class  c2  have  on  the  whole ?  --->  All  the  members  of  class  c1
+											    and
+										   new  members  of  class  c2
+
+9) In  other  words,  class  c2  has  all  the  features  of  class  c1  and  new  features
+
+10) Is  class  c2  a  brand  new  class ?  ---> No  and  it  is  an  extension  of  class  c1
+
+11) What  is  class  c1  called ?  --->  Parent  class , super  class , base  class  (or) old  class
+     What  is  class  c2  called ?  --->  Child  class , sub  class , derived  class  (or) new  class
+
+*12) When  is  inheritance  recommended  ?  ---> To  add  new  features  to  a  class  without  explicitly  modifying  the  class
+
+13) In  other  words,  a  class  can  be  enhanced  with  inheritance
+
+14) class  c1:
+            def  m1(self):
+	           pass
+      class  c2(c1):
+	     def  m1(self):
+	            pass
+       Is  method  m1()  inherited  to  class  c2 ?  --->  No  becoz  class  c2  already  has  method  m1()  
+
+15) class  c1:
+            def  m1(self):
+	           pass
+      class  c2(c1):
+	     def  m2(self):
+	            pass
+      Is  method  m1()  inherited  to  class  c2 ?  --->  Yes  becoz  class  c2  does  not  have  method  m1()
+																							
+16) When  is  a  method  inherited  to  child  class ?  ---> When  child  class  does  not  have  same  method
+
+17) class  c1:
+            def  m1(self):
+	           pass
+      class  c2(c1):
+	     def  m1(self):
+	            pass
+	     def  m2(self):
+	             How  to  call  method  m1()  of  parent  class ?  ---> super() . m1()
+		     How  to  call  method  m1()  of  same  class ?  ---> self . m1(()
+     
+18) class  c1:
+            x = 25
+      class  c2(c1):
+	     x = 35
+      Is  variable  'x'  inherited  to  class  c2 ?  ---> Yes  even  though  child  class  has  variable 'x'  
+      How  to  use  variable  'x'  of  class  c1 ?  --->  c1 . x  (or)  super() . x       
+      How  to  use  variable  'x'  of  class  c2 ?  ---> c2 . x  (or)  self . x       
+       
+19) How  are  members  distinguished  when  parent  class  and  child  class  have  members  with  same  name ? --->																									
+																super() . member  and  self . member
+
+*20) What  is  the  difference  between  self  and  super()  ?  --->										
+											self  refers  to  same  class  and  super()  refers  to  parent  class
+
+21) Which  methods  can  be  called  wrt  child  object ?  --->  Both  parent  and  child  methods
+      Which  methods  can  be  called  wrt  parent  object ?  ---> Only  parent  methods
+
+22) Let  parent  class  has  3  methods  and  child  class  has  5  methods,
+      How  many  methods  can  be  called  wrt  child  object  ?  --->  3 + 5 = 8 methods
+      How  many  methods  can  be  called  wrt  parent  object  ?  ---> Three  methods
+
+23) Which  class  is  the  parent  class  to  all  python  classes  ?  ---> object  class
+
+24) class  c1(object):
+                pass
+      Is  object  mandatory ?  --->  No  becoz  object  is  the  default  parent  class  to  every  python  class
+
+25) Where  is  object  class  defined ?  ---> In  builtins  module
+
+26) Are  values  of  parent  object  copied  to  child  object  when  child  object  is  created  ?  --->					
+									No  becoz  inheritance  is  from  class  to  class   but  not  from  object  to  object

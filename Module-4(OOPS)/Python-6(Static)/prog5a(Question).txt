@@ -1,0 +1,11 @@
+How  to  use  static  variable
+--------------------------------
+1) What  are  the  three  different  ways  to  use  a  static  variable ?  ---> classname . variable ,  cls . variable  and  object . variable
+
+2) Where  can  classname . variable  be  used ?  ---> Any  where  in  the  program
+
+3) Where  can  cls . variable  be  used ?  --->  Only  in  class  method
+
+4) Where  can  object . variable   be  used ?  --->  Any  where  in  the  program  as  long  as  object  exists
+
+5) Finally  which  one  is  recommended  and  why ?  ---> classname . variable  becoz  it  can   be  used   any  where  in  the  program
